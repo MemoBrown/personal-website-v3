@@ -11,16 +11,40 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 10;
 }
 .header a, .hero{
     color: var(--yellow-color);
 }
 .header a{
     text-decoration: none;
+    font-size: 26px;
+    margin: 0 10px;
 }
-/* .hero{
-    background-image: url(../images/code.jpg);
+.hero{
     height: 100vh;
-    background-repeat:no-repeat;
-    background-position:center top;
-} */
+}
+.hero-img img{
+height: 100vh;
+width: 100%;
+border-radius:  0 0 50% 50%;
+position: absolute;
+z-index: 0;
+top: 0;
+left: 0;
+filter: blur(5px);
+/* filter: grayscale(70%) */
+}
+.hero{
+    text-align: center;
+}
+.hero-title,
+.hero-description,
+.hero-btn{
+    position: relative;
+    z-index: 1;
+}
