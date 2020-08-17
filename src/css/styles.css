@@ -4,3 +4,6 @@
     --purple-color: #C111D9;
     --gray-color: #44444C;
 }
+body{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
