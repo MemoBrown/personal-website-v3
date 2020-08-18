@@ -1,4 +1,4 @@
-let words = ['desarrollo sitios web', 'soy apasionado por la tecnología', 'soy amante de las mascotas'],
+let words = ['desarrollo sitios web', 'soy apasionado por la tecnología', 'soy amante de los animales'],
 wordWrapper = document.getElementById('word'),
 wordWrapperContent = wordWrapper.innerHTML,
 addingWord = false,
