@@ -97,6 +97,8 @@ body{
 .cta{
     display: flex;
     width: 100%;
+    border-radius:  0 0 50% 50%;
+        height: 80vh;
 }
 .cta-image img{
     width: 80%;
@@ -122,5 +124,69 @@ body{
     font-size: 30px;
     background: transparent;
     transition: 300ms;
+}
+.cta-btn:hover{
+    color: #fff;
+    border: none;
+    background-color: var(--purple-color);
+    cursor: pointer;
+}
 
+/* ---------------------------------------------------------------recommendations */
+.recomm{
+    background-color: var(--yellow-color);
+    text-align: center;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 50px 0;
+    border-radius: 0 0 50% 50%;
+}
+.recomm-img img{
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+.recomm-title{
+    font-size: 3em;
+}
+.recomm-description{
+    font-size: 2.5em;
+    width: 40%;
+}
+.people{
+    font-weight: bold;
+    font-size: 2.5em;
+    margin: 0;
+}
+.people-desc{
+    font-size: 2em;
+    margin: 60px 0;
+}
+
+/* --------------------------------------------------------------------projects */
+
+
+/* ---------------------------------------------------------------------form */
+.form{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+form input{
+    outline: none;
+    border: 2px solid var(--yellow-color);
+    font-size: 20px;
+    border-radius: 40px;
+    margin: 10px 0;
+    padding: 10px 100px 10px 20px;
+    width: 100%;
+    text-align: left;
+    height: 50px;
+    -webkit-box-shadow: 3px 5px 20px -9px rgba(0,0,0,0.5);
+-moz-box-shadow: 3px 5px 20px -9px rgba(0,0,0,0.5);
+box-shadow: 3px 5px 20px -9px rgba(0,0,0,0.5);
 }
