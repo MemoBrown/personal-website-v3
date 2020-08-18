@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="src/images/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/fonts.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <title>Guillermo Moreno | Frontend Developer</title>
 </head>
@@ -60,18 +61,58 @@
                 Personas que confiaron en mi para llevar
                 su negocio al mundo digital
             </p>
-            <figure class="recomm-img">
-                <img src="src/images/anto.png" alt="">
-            </figure>
-            <p class="recomm-description">
-                “Guillermo en todo momento ha sido muy profesional. Dentro del desarrollo
-                del proyecto se ha asegurado de ser muy claro en tiempos de entregas”
-            </p>
-            <h3 class="people">Antonello Reverte</h3>
-            <p class="people-desc">Account Manager, Agencia Aditivo</p>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <figure class="recomm-img">
+                        <img src="src/images/anto.png" width="200px" height="200px" alt="">
+                    </figure>
+                    <p class="recomm-description">
+                        “Guillermo en todo momento ha sido muy profesional. Dentro del desarrollo
+                        del proyecto se ha asegurado de ser muy claro en tiempos de entregas”
+                    </p>
+                    <h3 class="people">Antonello Reverte</h3>
+                    <p class="people-desc">Account Manager, Agencia Aditivo</p>
+                </div>
+
+                <div class="mySlides fade">
+                    <figure class="recomm-img">
+                        <img src="src/images/code.jpg" width="200px" height="200px" alt="">
+                    </figure>
+                    <p class="recomm-description">
+                        “Guillermo en todo momento ha sido muy profesional. Dentro del desarrollo
+                        del proyecto se ha asegurado de ser muy claro en tiempos de entregas”
+                    </p>
+                    <h3 class="people">Antonello Reverte</h3>
+                    <p class="people-desc">Account Manager, Agencia Aditivo</p>
+                </div>
+
+                <div class="mySlides fade">
+                    <figure class="recomm-img">
+                        <img src="src/images/code1.jpg" width="200px" height="200px" alt="">
+                    </figure>
+                    <p class="recomm-description">
+                        “Guillermo en todo momento ha sido muy profesional. Dentro del desarrollo
+                        del proyecto se ha asegurado de ser muy claro en tiempos de entregas”
+                    </p>
+                    <h3 class="people">Antonello Reverte</h3>
+                    <p class="people-desc">Account Manager, Agencia Aditivo</p>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)"><div class="icon-cheveron-left"></div></a>
+                <a class="next" onclick="plusSlides(1)"><div class="icon-cheveron-right"></div></a>
+            </div>
+            <br>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
         </section>
     </div>
 
+        
+       
     <!-- --------------------------------------------------------------projects -->
     <section class="projects">
         <h2 class="projects-title">Proyectos</h2>
@@ -114,6 +155,7 @@
     <footer class="footer">
         
     </footer>
+    
     <script>
         ScrollReveal({ reset: true });
         ScrollReveal().reveal('.squares', { delay: 300 });

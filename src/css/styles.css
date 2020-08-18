@@ -213,22 +213,24 @@ animation: blinkAnim 900ms linear infinite;
 .recomm-img img{
     border: 5px solid #fff;
     border-radius: 50%;
+    margin: 0.7em 0;
 }
 .recomm-title{
     font-size: 3em;
+    margin: 10px 0 30px 0;
 }
 .recomm-description{
     font-size: 2.5em;
-    width: 40%;
+    width: 40vw;
 }
 .people{
     font-weight: bold;
     font-size: 2.5em;
-    margin: 0;
+    margin: 1em 0 0 0;
 }
 .people-desc{
     font-size: 2em;
-    margin: 60px 0;
+    margin: 10px 0 30px 0;
 }
 .container1{
     position: relative;
@@ -258,9 +260,80 @@ animation: blinkAnim 900ms linear infinite;
 .container1 .recomm{
     position: relative;
     z-index: 1;
-
     text-align: center;
 }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: var(--gray-color);
+    font-weight: bold;
+    font-size: 48px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.prev{
+    left: 20%;
+    border-radius: 50%;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 20%;
+    border-radius: 50%;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(68,68,76,0.8);
+    color: #fff;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin: 0 2px;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: 2px solid var(--gray-color)
+  }
+  
+  .active, .dot:hover {
+    background-color: var(--gray-color);
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
 
 
 /* --------------------------------------------------------------------projects */
