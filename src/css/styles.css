@@ -166,6 +166,8 @@ animation: blinkAnim 900ms linear infinite;
     width: 100%;
     height: 100vh;
     margin-top: 150px;
+    color: var(--gray-color);
+
 }
 .cta-image img{
     width: 80%;
@@ -177,7 +179,7 @@ animation: blinkAnim 900ms linear infinite;
     padding-right: 150px;
 }
 .cta-title{
-    color: var(--yellow-color);
+    color: var(--gray-color);
     font-size: 4em;
     margin: 1em 0;
 }
@@ -194,6 +196,7 @@ animation: blinkAnim 900ms linear infinite;
     background: transparent;
     transition: 300ms;
     margin: 1em 0;
+    color: var(--gray-color);
 }
 .cta-btn:hover{
     color: #fff;
@@ -209,6 +212,7 @@ animation: blinkAnim 900ms linear infinite;
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    color: var(--gray-color);
 }
 .recomm-img img{
     border: 5px solid #fff;
@@ -346,6 +350,8 @@ animation: blinkAnim 900ms linear infinite;
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    color: var(--gray-color);
+    margin-top: 4em;
 }
 form{
     display: flex;
@@ -365,13 +371,29 @@ form input{
     text-align: left;
     height: 50px;
     box-shadow: 3px 5px 20px -9px rgba(0,0,0,0.5);
+    height: 70px;
 }
 .details-btn{
     box-shadow: initial;
     background-color: var(--yellow-color);
-    color: #000;
+    color: var(--gray-color);
     font-size: 30px;
     text-align: center;
-    height: 70px;
     padding: 0;
+    width: 200px;
+    transition: 300ms;
+}
+.details-btn:hover{
+    color: #fff;
+    border: none;
+    background-color: var(--purple-color);
+    cursor: pointer;
+}
+.form-title{
+    color: var(--gray-color);
+    font-size: 4em;
+}
+.form-desc{
+    font-size: 2em;
+    margin: 1em 0;
 }
