@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Guillermo Moreno / contact@memobrown.com">
+    <link rel="icon" type="image/png" href="src/images/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/styles.css">
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
     <title>Guillermo Moreno | Frontend Developer</title>
 </head>
 <body>
@@ -15,22 +18,24 @@
                 <a href="#">Blog</a>
                 <a href="#">Proyectos</a>
                 <a href="#">Clientes Satisfechos</a>
-                <a href="#" class="nav-cta">¡Quiero una cotización!</a>
+                <a href="#" class="nav-cta" style="color: #fff;">¡Quiero una cotización!</a>
         </nav>
     </header>
 
     <!-- -----------------------------------------------------hero -->
-    <div class="hero">
+    <div class="hero headline">
         <figure class="hero-img">
             <img src="src/images/code2.jpg" alt="">
         </figure>
         <h1 class="hero-title">
-            Llevemos tu negocio<br> al mundo digital
+            Llevemos tu negocio al mundo digital
         </h1>
-        <p class="hero-description">¡Hola! Soy Guillermo Moreno y desarrollo sitios web</p>
+        <p class="hero-description">¡Hola! Soy Guillermo Moreno y<br> 
+            <span class="word" id="word">desarrollo sitios web</span>
+        </p>
         <button class="hero-btn">Conocer más</button>
-        <figure class="scrolldown">
-            <img src="src/images/arrows.svg" width="80px" alt="">
+        <figure class="scrolldown animated pulse">
+            <img src="src/images/down.png"   width="80px" alt="">
         </figure>
     </div>
 
@@ -106,5 +111,9 @@
     <footer class="footer">
         
     </footer>
+    <!-- <script>
+        ScrollReveal().reveal('.headline');
+    </script> -->
+    <script src="src/js/index.js"></script>
 </body>
 </html>
