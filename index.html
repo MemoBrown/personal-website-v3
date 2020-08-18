@@ -7,12 +7,12 @@
     <link rel="icon" type="image/png" href="src/images/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/styles.css">
-    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <title>Guillermo Moreno | Frontend Developer</title>
 </head>
 <body>
     <!-- -------------------------------------------header -->
-    <div class="container">
+    <div class="container squares">
         <header class="header">
             <img src="src/images/logo.png" width="400px" alt="Memobrown Logo">
             <nav class="nav">
@@ -24,7 +24,7 @@
         </header>
         
         <!-- -----------------------------------------------------hero -->
-        <div class="hero headline">
+        <div class="hero squares">
             <h1 class="hero-title">
                 Llevemos tu idea al mundo digital
             </h1>
@@ -39,7 +39,7 @@
     </div>
 
     <!-- ------------------------------------------------------------section-CTA -->
-    <div class="container1">
+    <div class="squares">
         <section class="cta">
             <figure class="cta-image">
                 <img src="src/images/projects.png"  alt="">
@@ -53,22 +53,24 @@
     </div>
 
     <!-- ------------------------------------------------------------------------recommendations -->
-    <section class="recomm">
-        <h2 class="recomm-title">Una web única, como tú</h2>
-        <p class="recomm-description">
-            Personas que confiaron en mi para llevar
-            su negocio al mundo digital
-        </p>
-        <figure class="recomm-img">
-            <img src="src/images/anto.png" alt="">
-        </figure>
-        <p class="recomm-description">
-            “Guillermo en todo momento ha sido muy profesional. Dentro del desarrollo
-            del proyecto se ha asegurado de ser muy claro en tiempos de entregas”
-        </p>
-        <h3 class="people">Antonello Reverte</h3>
-        <p class="people-desc">Account Manager, Agencia Aditivo</p>
-    </section>
+    <div class="container1">
+        <section class="recomm">
+            <h2 class="recomm-title">Una web única, como tú</h2>
+            <p class="recomm-description">
+                Personas que confiaron en mi para llevar
+                su negocio al mundo digital
+            </p>
+            <figure class="recomm-img">
+                <img src="src/images/anto.png" alt="">
+            </figure>
+            <p class="recomm-description">
+                “Guillermo en todo momento ha sido muy profesional. Dentro del desarrollo
+                del proyecto se ha asegurado de ser muy claro en tiempos de entregas”
+            </p>
+            <h3 class="people">Antonello Reverte</h3>
+            <p class="people-desc">Account Manager, Agencia Aditivo</p>
+        </section>
+    </div>
 
     <!-- --------------------------------------------------------------projects -->
     <section class="projects">
@@ -112,9 +114,10 @@
     <footer class="footer">
         
     </footer>
-    <!-- <script>
-        ScrollReveal().reveal('.headline');
-    </script> -->
+    <script>
+        ScrollReveal({ reset: true });
+        ScrollReveal().reveal('.squares', { delay: 300 });
+    </script>
     <script src="src/js/index.js"></script>
 </body>
 </html>
