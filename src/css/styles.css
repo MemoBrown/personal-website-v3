@@ -347,6 +347,9 @@ animation: blinkAnim 900ms linear infinite;
     color: var(--gray-color);
     margin-top: 4em;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
 }
 .projects-title{
     font-size: 4em;
@@ -354,6 +357,15 @@ animation: blinkAnim 900ms linear infinite;
 .projects-desc{
     font-size: 2em;
     margin: 1em 0;
+}
+.projects-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.project img{
+    border-radius: 15px;
+    margin-bottom: 4em;
 }
 
 /* ---------------------------------------------------------------------form */
@@ -395,6 +407,7 @@ form input{
     padding: 0;
     width: 200px;
     transition: 300ms;
+    margin-bottom: 2em;
 }
 .details-btn:hover{
     color: #fff;
@@ -409,4 +422,103 @@ form input{
 .form-desc{
     font-size: 2em;
     margin: 1em 0;
+}
+
+/* -------------------------------------------about */
+.about{
+    color: var(--gray-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.about-title{
+    font-size: 3em;
+    margin: 20px 0;
+}
+.about img{
+    width: 400px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin: 40px 0;
+}
+.about-desc{
+    font-size: 2em;
+    width: 50%;
+}
+.about-btn{
+    background-color: transparent;
+    color: var(--gray-color);
+    border-radius: 40px;
+    outline: none;
+    font-size: 2.5em;
+    padding: 15px;
+    cursor: pointer;
+    margin-top: 1em;
+    border: 2px solid var(--gray-color);
+    transition: 300ms;
+}
+.about-btn:hover{
+    color: #fff;
+    background-color: var(--purple-color);
+    border: var(--purple-color);
+}
+.container2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    display: inherit;
+    position: relative;
+    z-index: 10;
+
+}
+.container2::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100vh;
+    height: 100vh;
+    background-color: var(--yellow-color);
+    background-position: top;
+    background-size: 1000px;
+    border-radius: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) scale(4);
+}   
+.container2 .about{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* -----------------------------------------------footer */
+.footer{
+    background-color: var(--gray-color);
+    position: relative;
+    z-index: 0;
+    height: 80vh;
+    margin-top: -280px;
+    padding-top: 300px;
+}
+
+.footer a{
+    color: var(--yellow-color);
+    text-decoration: none;
+    font-size: 30px;
+    margin: 10px;
+    transition: 300ms;
+    text-align: center;
+}
+.social{
+    margin-top: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

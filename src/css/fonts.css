@@ -33,16 +33,41 @@
 }
 .icon-envelope:before {
   content: "\e902";
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--yellow-color);
+  border-radius: 50%;
+  padding: 10px;
 }
 .icon-facebook:before {
   content: "\ea90";
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--yellow-color);
+  border-radius: 50%;
+  padding: 10px;
 }
 .icon-instagram:before {
   content: "\ea92";
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--yellow-color);
+  border-radius: 50%;
+  padding: 10px;
 }
 .icon-twitter:before {
   content: "\ea96";
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--yellow-color);
+  border-radius: 50%;
+  padding: 10px;
 }
 .icon-github:before {
   content: "\eab0";
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--yellow-color);
+  border-radius: 50%;
+  padding: 10px;
 }
