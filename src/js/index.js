@@ -1,3 +1,4 @@
+// ------------------------------------frase cambiando en hero
 let words = ['desarrollo sitios web', 'soy apasionado por la tecnología', 'soy amante de los animales'],
 wordWrapper = document.getElementById('word'),
 wordWrapperContent = wordWrapper.innerHTML,
@@ -31,8 +32,8 @@ setInterval(function(){
 
 }, 120);
 
-
-var slideIndex = 1;
+// --------------------------------------------------------------carrusel
+let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -44,9 +45,9 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {

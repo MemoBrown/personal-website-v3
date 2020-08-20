@@ -8,7 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="src/css/fonts.css">
+    <link rel="stylesheet" href="src/css/icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="src/js/jquery-3.2.1.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <title>Guillermo Moreno | Frontend Developer</title>
 </head>
 <body>
@@ -140,12 +144,23 @@
     <section class="form squares">
         <h2 class="form-title">Escribeme acerca de tu proyecto</h2>
         <p class="form-desc">Me comunicaré contigo en menos de 24 hrs</p>
-        <form action="">
-            <input type="text" placeholder="Nombre"><br>
-            <input type="number" placeholder="WhatsApp"><br>
-            <input type="email" placeholder="Correo electrónico"><br>
-            <input type="text" class="details-form" placeholder="Detalles de tu proyecto"><br>
-            <input type="button" class="details-btn" value="Enviar">
+        <form action="enviar.php" method="post">
+                <input type="text" id="names" name="nombre" placeholder="Nombre *" required>
+
+                <input type="text" id="phone" name="telefono" placeholder="WhatsApp *">
+
+                <input type="text" id="email" name="correo" placeholder="Correo electrónico *" required>
+
+                <textarea id="mensaje"  name="mensaje" class="details-form" placeholder="Detalles de tu proyecto *" required></textarea>
+
+                <input type="submit" value="Enviar" id="btnSend" class="details-btn">
+
+            <!-- <input type="text" name="name" id="name" class="name" placeholder="Nombre"><br>
+            <input type="number" name="phone" id="subject" class="subject" placeholder="WhatsApp"><br>
+            <input type="email" name="mail" id="mail" class="email" placeholder="Correo electrónico"><br>
+            <textarea type="text" name="message" id="message" class="details-form message" placeholder="Detalles de tu proyecto"></textarea><br>
+            <button type="submit" class="details-btn">Enviar</button> -->
+            <!-- <input type="button" class="details-btn" value="Enviar"> -->
         </form>
     </section>
 
@@ -168,18 +183,7 @@
     <!-- -----------------------------------------------------------------footer -->
     <div class="container3">
         <footer class="footer">
-            <div class="dev">
-                <figure><img src="src/images/icon.png"  alt=""></figure>
-                <h3>Code & Develop</h3>
-                <p>Guillermo Moreno 2020 ©</p>
-            </div>
-            <div class="aditivo">
-                <img src="src/images/aditivo.svg" width="150px" alt="">
-                <p>UI Design
-                    Aditivo 2020</p>
-            </div>
             <div class="social">
-                <h3>¡Contáctame!</h3>
                 <a class="social-icon" href="https://www.facebook.com/MemoBrownn/" target="_blank">
                     <div class="icon-facebook"></div>
                 </a>
@@ -196,6 +200,22 @@
                     <div class="icon-envelope"></div>
                 </a>
               </div>
+
+              <div class="creators">
+                <div class="dev">
+                    <figure><img src="src/images/logo-white.png" width="250px" alt=""></figure>
+                    <h3>Code & Develop</h3>
+                    <p>Guillermo Moreno 2020 ©</p>
+                </div>
+    
+                <div class="aditivo">
+                    <a href="https://weaditivo.com/" target="_blank">
+                        <img src="src/images/aditivo.svg" width="150px" alt="">
+                    </a>
+                    <p>UI Design
+                        Aditivo 2020</p>
+                </div>
+              </div>
         </footer>
 
     </div>
@@ -205,5 +225,6 @@
         ScrollReveal().reveal('.squares', { delay: 300 });
     </script> -->
     <script src="src/js/index.js"></script>
+    <script src="src/js/validacion.js"></script>
 </body>
 </html>
