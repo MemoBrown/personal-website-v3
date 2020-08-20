@@ -7,31 +7,31 @@ $(document).ready(function(){
   
         // Validado Nombre ==============================
         if( $('#names').val() == '' ){
-            errores += '<p class=".icon-profile-male">Escriba un nombre</p>';
-            $('#names').css("border-color", "#F14B4B")
+            errores += '<p style="color: #F14B4B">⦿ Escriba un nombre</p>';
+            $('#names').css("border-color", "#F14B4B");
         } else{
-            $('#names').css("border-color", "#FFD524")
+            $('#names').css("border-color", "#FFD524");
         }
-  
-        // Validado Correo ==============================
-        if( $('#email').val() == '' ){
-            errores += '<p>Ingrese un correo</p>';
-            $('#email').css("border-color", "#F14B4B")
-        } else{
-            $('#email').css("border-color", "#FFD524")
-        }
-  
+   
         //Validando telefono=============================
         if( $('#phone').val() == '' ){
-          errores += '<p>Ingrese un telefono</p>';
+          errores += '<p style="color: #F14B4B">⦿ Ingrese un telefono</p>';
           $('#phone').css("border-color", "#f14b4b")
         } else{
           $('#phone').css("border-color", "#FFD524")
         }
   
+        // Validado Correo ==============================
+        if( $('#email').val() == '' ){
+            errores += '<p style="color: #F14B4B">⦿ Ingrese un correo</p>';
+            $('#email').css("border-color", "#F14B4B")
+        } else{
+            $('#email').css("border-color", "#FFD524")
+        }
+        
         // Validado Mensaje ==============================
         if( $('#mensaje').val() == '' ){
-            errores += '<p>Escriba un mensaje</p>';
+            errores += '<p style="color: #F14B4B">⦿ Escriba un mensaje</p>';
             $('#mensaje').css("border-color", "#F14B4B")
         } else{
             $('#mensaje').css("border-color", "#FFD524")
@@ -44,7 +44,7 @@ $(document).ready(function(){
                 title: 'Oops...',
                 text: 'Something went wrong!',
                 html:
-                '<div class="mensaje_modal"'+
+                '<div>'+
                 '<h3>Errores encontrados</h3>'+
                 errores+
                 '</div>',
