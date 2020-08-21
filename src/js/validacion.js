@@ -20,15 +20,7 @@ $(document).ready(function(){
         } else{
           $('#phone').css("border-color", "#FFD524")
         }
-  
-        // Validado Correo ==============================
-        if( $('#email').val() == '' ){
-            errores += '<p style="color: #F14B4B">⦿ Ingrese un correo</p>';
-            $('#email').css("border-color", "#F14B4B")
-        } else{
-            $('#email').css("border-color", "#FFD524")
-        }
-        
+       
         // Validado Mensaje ==============================
         if( $('#mensaje').val() == '' ){
             errores += '<p style="color: #F14B4B">⦿ Escriba un mensaje</p>';
