@@ -49,10 +49,10 @@ $(document).ready(function(){
                 errores+
                 '</div>',
                 showClass: {
-                    popup: 'animate__animated animate__fadeInDown'
+                    popup: 'animate__animated animate__bounceIn'
                   },
                   hideClass: {
-                    popup: 'animate__animated animate__fadeOutUp'
+                    popup: 'animate__animated animate__bounceOut'
                   }
 
               })

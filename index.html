@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="src/css/fonts.css">
-    <link rel="stylesheet" href="src/css/icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
     <script src="src/js/jquery-3.2.1.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -22,8 +21,8 @@
             <img src="src/images/logo.png" width="400px" alt="Memobrown Logo">
             <nav class="nav">
                 <a href="#">Blog</a>
-                <a href="#">Proyectos</a>
-                <a href="#">Clientes Satisfechos</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#clients">Clientes Satisfechos</a>
                 <a href="#" class="nav-cta" style="color: #fff;">¡Quiero una cotización!</a>
             </nav>
         </header>
@@ -37,7 +36,7 @@
                 <span class="word" id="word">desarrollo sitios web</span>
             </p>
             <button class="hero-btn">Conocer más</button>
-            <figure class="scrolldown animated pulse">
+            <figure class="scrolldown animated slide">
                 <img src="src/images/arrows.svg"   width="80px" alt="">
             </figure>
         </div>
@@ -47,7 +46,7 @@
     <div class="squares">
         <section class="cta">
             <figure class="cta-image">
-                <img src="src/images/projects.png"  alt="">
+                <img src="src/images/responsive.png" alt="">
             </figure>
             <div class="cta-desc">
                 <h2 class="cta-title">Una web única,<br>como tú</h2>
@@ -58,7 +57,7 @@
     </div>
 
     <!-- ------------------------------------------------------------------------recommendations -->
-    <div class="container1 squares">
+    <div class="container1 squares" id="clients">
         <section class="recomm">
             <h2 class="recomm-title">Una web única, como tú</h2>
             <p class="recomm-description">
@@ -119,7 +118,7 @@
         
        
     <!-- --------------------------------------------------------------projects -->
-    <section class="projects squares">
+    <section class="projects squares" id="projects">
         <h2 class="projects-title">Proyectos</h2>
         <p class="projects-desc">
             Estos son algunos proyectos de clientes satisfechos. 
