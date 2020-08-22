@@ -451,7 +451,7 @@ form input,
     outline: none;
     border: 2px solid var(--yellow-color);
     font-size: 20px;
-    border-radius: 50px;
+    border-radius: 40px;
     margin: 10px 0;
     padding: 10px 100px 10px 20px;
     width: 100%;
