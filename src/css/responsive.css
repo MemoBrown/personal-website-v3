@@ -67,6 +67,7 @@ body{
     }
     .container{
         padding: 20px;
+        height: 100%;
     }
     .container, .container1, .container2 {
         width: 110%;

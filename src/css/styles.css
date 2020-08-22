@@ -68,7 +68,7 @@ body{
 }
 .header a{
     text-decoration: none;
-    font-size: 1.5;
+    font-size: 1.5em;
     margin: 0 10px;
     position: relative;
 	outline: none;
@@ -132,7 +132,7 @@ body{
     color: var(--teal-color);
 }
 .scrolldown{
-    margin-top: 60px;
+    margin: 40px 0;
 }
 
 .animated {
