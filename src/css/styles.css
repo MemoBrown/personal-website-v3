@@ -15,12 +15,13 @@ body{
     background-color: #f4f6ff;
     color: var(--teal-color);
 }
+
 .container,
 .container1,
 .container2{
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -29,6 +30,9 @@ body{
     display: inherit;
     position: relative;
     z-index: 10;
+}
+.container{
+    height: 100vh;
 }
 .container::before{
     content: '';
@@ -74,6 +78,9 @@ body{
 }
 .header a:hover{
     color: #fff;
+}
+.header img{
+    width: 350px;
 }
 .nav-cta{
     border: 2px solid var(--yellow-color);
