@@ -38,7 +38,51 @@ body{
 }
 
 @media screen and (max-width: 768px){
-
+    .container, .container1, .container2 {
+        width: 110%;
+    }
+    .cta{
+        height: 100%;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cta-image img {
+        width: 100%;
+        padding-left: 80px;
+    }
+    .cta-desc{
+        width: 100%;
+        margin-left: 60px;
+    }
+    .container1{
+        margin-top: 4em;
+    }
+    .recomm-description {
+        width: 70vw;
+    }
+    .prev{
+        display: none;
+    }
+    .next{
+        display: none;
+    }
+    .projects{
+        margin-left: 20px;
+    }
+    .projects-img {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .about-desc {
+        width: initial;
+    }
+    .footer{
+        width: 110%;
+    }
+    .creators{
+        margin: 30px;
+    }
 }
 
 @media screen and (max-width: 480px){

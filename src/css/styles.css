@@ -200,7 +200,7 @@ animation: blinkAnim 900ms linear infinite;
 }
 .cta-description{
     font-size: 2.6em;
-    margin: 1em 0;
+    margin: 1em 0 2em 0;
 }
 .cta-btn{
     border: 2px solid var(--yellow-color);
@@ -210,8 +210,8 @@ animation: blinkAnim 900ms linear infinite;
     font-size: 30px;
     background: transparent;
     transition: 300ms;
-    margin: 1em 0;
     color: var(--teal-color);
+    text-decoration: none;
 }
 .cta-btn:hover{
     border: none;
