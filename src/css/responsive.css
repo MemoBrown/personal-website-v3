@@ -98,14 +98,14 @@ body{
         display: none;
     }
     .projects{
-        margin-left: 20px;
+        margin-left: 10%;
     }
     .projects-img {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
     }
     .form{
-        margin-left: 8%;
+        margin-left: 10%;
     }
     .about-desc {
         width: initial;
