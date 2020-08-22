@@ -19,7 +19,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Guillermo Moreno / contact@memobrown.com">
-    <link rel="icon" type="image/png" href="src/images/icon.png">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/qvzKW2z.png">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="src/css/fonts.css">
@@ -33,15 +33,41 @@
 </head>
 <body>
     <!-- -------------------------------------------header -->
-    <div class="container squares">
+    <div class="container">
         <header class="header">
-            <img src="src/images/logo.png" alt="Memobrown Logo">
+            <figure class="logo">
+                <img src="https://i.imgur.com/S0QA52m.png" alt="Memobrown Logo">
+            </figure>
+            <figure class="logo2">
+                <img src="https://i.imgur.com/qvzKW2z.png" class="img-mobile" alt="Memobrown Logo">
+            </figure>
             <nav class="nav">
-                <a href="#">Blog</a>
+                <a href="https://blog.memobrown.com" target="_blank">Blog</a>
                 <a href="#projects">Proyectos</a>
                 <a href="#clients">Clientes Satisfechos</a>
+                <a href="#about">Acerca de mí</a>
                 <a href="#form" class="nav-cta" style="color: #fff;">¡Contáctame!</a>
             </nav>
+
+            <div class="menu-mbl">
+                <div class="circle"></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="https://blog.memobrown.com" target="_blank">Blog</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#clients">Clientes Satisfechos</a></li>
+                        <li><a href="#about">Acerca de mí</a></li>
+                        <li><a href="#form">¡Contáctame!</a></li>
+                    </ul>
+        
+                </div>			            
+                <div class="burger">
+                    <div class="x"></div>
+                    <div class="y"></div>
+                    <div class="z"></div>
+                </div>    
+            </div>
+
         </header>
         
         <!-- -----------------------------------------------------hero -->
@@ -63,7 +89,7 @@
     <div class="squares">
         <section class="cta" id="cta">
             <figure class="cta-image">
-                <img src="src/images/responsive.png" alt="">
+                <img src="https://i.imgur.com/XzH0hnW.png" alt="">
             </figure>
             <div class="cta-desc">
                 <h2 class="cta-title">Una web única,<br>como tú</h2>
@@ -85,7 +111,7 @@
 
                 <div class="mySlides fade">
                     <figure class="recomm-img">
-                        <img src="src/images/isaac.jpeg" width="200px" height="200px" alt="">
+                        <img src="https://i.imgur.com/blOh6Fu.jpg" width="200px" height="200px" alt="">
                     </figure>
                     <p class="recomm-description">
                         “Guillermo es un profesional muy capaz y se centra en la satisfacción
@@ -98,7 +124,7 @@
 
                 <div class="mySlides fade">
                     <figure class="recomm-img">
-                        <img src="src/images/anto.png" width="200px" height="200px" alt="">
+                        <img src="https://i.imgur.com/BSE3unN.png" width="200px" height="200px" alt="">
                     </figure>
                     <p class="recomm-description">
                         “Guillermo en todo momento ha sido muy profesional. Dentro del desarrollo
@@ -110,14 +136,13 @@
 
                 <div class="mySlides fade">
                     <figure class="recomm-img">
-                        <img src="src/images/code1.jpg" width="200px" height="200px" alt="">
+                        <img src="https://i.imgur.com/qCR7zXm.jpg" width="200px" height="200px" alt="">
                     </figure>
                     <p class="recomm-description">
-                        “Guillermo en todo momento ha sido muy profesional. Dentro del desarrollo
-                        del proyecto se ha asegurado de ser muy claro en tiempos de entregas”
+                        “Guillermo supero nuestras expectativas”
                     </p>
-                    <h3 class="people">Antonello Reverte</h3>
-                    <p class="people-desc">Account Manager, Agencia Aditivo</p>
+                    <h3 class="people">Christian Matamoros</h3>
+                    <p class="people-desc">Librería Fuerza y Valor</p>
                 </div>
                 
                 <a class="prev" onclick="plusSlides(-1)"><div class="icon-cheveron-left"></div></a>
@@ -239,7 +264,7 @@
     </section>
 
     <!-- ------------------------------------------------------------------------about -->
-    <div class="container2 squares">
+    <div class="container2 squares" id="about">
         <section class="about">
             <h2 class="about-title">Soy Guillermo Moreno, Frontend developer</h2>
             <p class="about-desc">Vivo en Guadalajara, México. Y me dedico al
@@ -277,7 +302,7 @@
 
               <div class="creators">
                 <div class="dev">
-                    <figure><img src="src/images/logo-white.png" width="250px" alt=""></figure>
+                    <figure><img src="https://i.imgur.com/nlIyp2h.png" width="250px" alt=""></figure>
                     <h3>Code & Develop</h3>
                     <p>Guillermo Moreno 2020 ©</p>
                 </div>
@@ -291,15 +316,15 @@
                 </div>
               </div>
 
-              <a href="#up" class="simplescrollup__button simplescrollup__button--hide"><img src="https://i.imgur.com/W7wXtXi.png" alt=""></a>
-        </footer>
+            </footer>
+            <a href="#up" class="simplescrollup__button simplescrollup__button--hide"><img src="https://i.imgur.com/W7wXtXi.png" alt=""></a>
 
     </div>
     
-    <!-- <script>
+    <script>
         ScrollReveal({ reset: true });
         ScrollReveal().reveal('.squares', { delay: 300 });
-    </script> -->
+    </script>
     <script src="src/js/index.js"></script>
     <script src="src/js/validacion.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

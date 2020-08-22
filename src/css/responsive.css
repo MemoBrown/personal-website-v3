@@ -22,8 +22,8 @@ body{
     }
     .header a{
         letter-spacing: initial;
-        font-size: 20px;
-        margin: 0 6px;
+        font-size: 18px;
+        margin: 0 5px;
     }
     .cta-desc{
         padding-right: initial;
@@ -35,8 +35,38 @@ body{
 }
 
 @media screen and (max-width: 768px){
-    .header{
+    .header a {
+        position: initial;
+        outline: initial;
+        transition: initial;
+    }
+    .logo,
+    .nav{
         display: none;
+    }
+    .menu-mbl{
+        display: block;
+    }
+    
+    .header{
+        justify-content: center;
+    }
+    .header a:hover{
+        color: var(--teal-color);
+    }
+    .logo2 img{
+        display: inherit;
+        width: 130px;
+    }
+    .hero-title {
+        font-size: 3.2em;
+        margin: 40px 0 40px 0;
+    }
+    .hero-description {
+        font-size: 2.2em;
+    }
+    .container{
+        padding: 20px;
     }
     .container, .container1, .container2 {
         width: 110%;
@@ -89,6 +119,9 @@ body{
 }
 
 @media screen and (max-width: 576px){
+    div.menu {
+        left: 22%;
+    }
     .hero-title {
         margin: 40px 0;
     }
@@ -113,6 +146,9 @@ body{
 }
 
 @media screen and (max-width: 480px){
+    div.menu {
+        left: 15%;
+    }
     .hero-title {
         font-size: 3.2em;
     }
@@ -138,6 +174,9 @@ body{
 }
 
 @media screen and (max-width: 320px){
+    div.menu {
+        left: 0;
+    }
     .hero-title {
         font-size: 3em;
     }
@@ -151,10 +190,26 @@ body{
         width: 120%;
         padding: 15px;
     }
+    .cta-btn {
+        padding: 20px 40px;
+    }
     .container, .container1, .container2 {
         width: 120%;
     }
     .footer{
         width: 120%;
+    }
+    .about img {
+        width: 330px;
+    }
+    .about-desc {
+        font-size: 1.5em;
+    }
+    .about-btn {
+        font-size: 1.6em;
+    }
+    .project img {
+        width: 300px;
+        margin-left: 6%;
     }
 }
