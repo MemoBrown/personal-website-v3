@@ -43,7 +43,7 @@ body{
     height: 100vh;
     background-image: url(../images/code4.jpg);
     background-position: top;
-    background-size: 1000px;
+    background-size: contain;
     border-radius: 50%;
     transform-origin: bottom;
     transform: translateX(-50%) scale(4);
@@ -561,7 +561,7 @@ form input,
     background-color: #37373c;
     position: relative;
     z-index: 0;
-    height: 60vh;
+    height: 100%;
     margin-top: -280px;
     padding: 280px 100px 0 100px;
     color: #fff;
