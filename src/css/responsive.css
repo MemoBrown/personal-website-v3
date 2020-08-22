@@ -35,6 +35,9 @@ body{
 }
 
 @media screen and (max-width: 768px){
+    .header{
+        display: none;
+    }
     .container, .container1, .container2 {
         width: 110%;
     }
@@ -116,6 +119,12 @@ body{
     .hero-description {
         font-size: 2em;
     }
+    .cta-title{
+        font-size: 3em;
+    }
+    .cta-description {
+        font-size: 2em;
+    }
     .recomm-description {
         font-size: 2em;
         width: 100%;
@@ -129,4 +138,23 @@ body{
 }
 
 @media screen and (max-width: 320px){
+    .hero-title {
+        font-size: 3em;
+    }
+    .hero-description {
+        font-size: 1.8em;
+    }
+    .hero-btn {
+        font-size: 2em;
+    }
+    .cta-image img {
+        width: 120%;
+        padding: 15px;
+    }
+    .container, .container1, .container2 {
+        width: 120%;
+    }
+    .footer{
+        width: 120%;
+    }
 }
